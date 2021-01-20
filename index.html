@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfH5SP1K6pfmqVn4VZ7bQ7fifXxAnkdw4&callback=initMap&libraries=&v=weekly"
+    defer
+  ></script>
+  <script>
+    function initMap() {
+      const roa = { lat: 59.94824654692558, lng: 10.643940769732344 };
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        center: roa
+      });
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <header class="container">
+     <h1>SAXEN</h1>
+    <h2>Bestill time hos en av våre dyktige frisører.</h2>
+    <nav>
+      <button id="bestillTime">BESTILL TIME</button>
+      <button id="gavekort">KJØP GAVEGORT</button>
+    </nav>
+  </header>
+
+  <main>
+    <h3>
+      Avdelinger
+    </h3>
+    <div class="avdelinger">
+      <div class="avdeling">
+        <img src="https://res.cloudinary.com/odin-systemer/image/upload/w_640,h_340,d_defaults:default_department_840x446_wtcx79.png/v1506685276/department/department_1924_webbanner.jpg">
+        <h3>Saxen AS avd Skøyen</h3>
+        <p>Hovfaret 17 0275 Oslo</p>
+        <button>Les mer</button>
+      </div>
+
+      <div class="avdeling">
+        <img src="https://res.cloudinary.com/odin-systemer/image/upload/w_640,h_340,d_defaults:default_department_840x446_wtcx79.png/v1568802675/department/department_1923_webbanner.jpg">
+        <h3>Saxen AS avd Slemmestad</h3>
+        <p>Odalsveien 64 3471 Slemmestad</p>
+        <button>Les mer</button>
+      </div>
+
+      <div class="avdeling">
+        <img src="https://res.cloudinary.com/odin-systemer/image/upload/w_640,h_340,d_defaults:default_department_840x446_wtcx79.png/v1506685424/department/department_1925_webbanner.jpg">
+        <h3>Saxen AS avd Røa</h3>
+        <p>Vækerøveien 205 0751 Oslo</p>
+        <button>Les mer</button>
+      </div>
+    </div>
+
+  </main>
+
+  <div id="map">
+  </div>
+
+  <footer>
+    <div class="footerDiv">
+      <h3>LAST NED FIXIT-APPEN</h3>
+      <p>Rask og enkel timebestilling hos Saxen AS  med appen Fixit Timebestilling</p>
+      <div id="appImages">
+        <img src="https://res.cloudinary.com/odin-systemer/image/upload/w_100/v1510061353/resources/Hjemmeside_Malbilder/ap_store-02.png" >
+        <img src="https://res.cloudinary.com/odin-systemer/image/upload/w_100/v1510061353/resources/Hjemmeside_Malbilder/google_play-02.png" >
+      </div>
+    </div>
+
+    <div class="footerDiv">
+      <h3>VÅRE AVDELINGER</h3>
+      <a>Saxen AS avd Skøyen</a>
+      <a>Saxen AS avd Slemmestad</a>
+      <a>Saxen AS avd Røa</a>
+    </div>
+
+    <div class="footerDiv">
+      <h3>MIN SIDE</h3>
+      <a>Logg inn</a>
+      <a>Min profil</a>
+      <a>Tidligere besøk</a>
+      <a>Bestill time</a>
+    </div>
+  </footer>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+
+
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=News Cycle:200,300,400,700|News Cycle">
+</body>
+
+</html>
